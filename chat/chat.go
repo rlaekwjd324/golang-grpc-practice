@@ -7,6 +7,7 @@ import (
 )
 
 type Server struct {
+	UnimplementedChatServiceServer
 }
 
 func (s *Server) SayHello(ctx context.Context, in *Message) (*Message, error) {
